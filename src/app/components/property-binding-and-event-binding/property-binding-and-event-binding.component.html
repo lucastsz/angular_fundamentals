@@ -1,0 +1,58 @@
+<div class="class">
+  <h2>4. Property Binding (PB) e Event Binding (EB)</h2>
+  <ol>
+    <li>
+      <h3>Property Binding</h3>
+      <p>
+        O PB permite que você use variáveis como propriedades dos componentes
+        HTML dentro do componente, exemplo: Criar uma variavel no arquivo
+        TypeScript do componente chamada
+        <span class="code"
+          ><code><b>urlImage</b></code></span
+        >, após a criação, será possível usar essa variável como propriedade de
+        alguma tag ou elemento HTML.
+      </p>
+      <p>
+        Estanciei a variável no arquivo .ts do meu componente assim:
+        <span class="code">
+          <code>
+            urlImage: string = "https://source.unsplash.com/random/300×300/".
+          </code>
+        </span>
+      </p>
+      <p>
+        Nesse caso eu estou pegando uma URL aleatória de imagens e estou
+        atribuindo a variável <code> urlImagem</code>, usarei essa variável no
+        arquivo HTML do meu componente. Exemplo:
+      </p>
+      <div class="img">
+        <img [src]="urlImage" alt="Imagem Aleatória" />
+        <span class="spaceImg"></span>
+        <img src="../assets/Property binding img url.png" alt="codigo img" />
+      </div>
+    </li>
+    <li>
+      <h3>Event Binding</h3>
+      <p>
+        O event Binding se resume em disparar um método a partir de um evento.
+        Exemplo:
+      </p>
+      <p>
+        Irei criar um metodo no meu arquivo .ts do componente chamado
+        <code><span class="code">mostrarData()</span></code
+        >, onde eu colocarei um alerta para mostrar quando clicar no botão.
+      </p>
+      <p>
+        No meu arquivo .html eu criarei um button com o evento:
+        <code>
+          <span class="code"> &lt;button (click)="mostrarData()&gt; </span>
+        </code>
+      </p>
+      <p>
+        <button (click)="mostrarData()" type="button">
+          Mostrar Data de Nascimento
+        </button>
+      </p>
+    </li>
+  </ol>
+</div>

@@ -1,0 +1,35 @@
+<div class="class">
+  <h2>2. Interpolação</h2>
+  <p>
+    A interpolação serve para mostrar os dados(variáveis) que estão na classe do
+    componente no template (HTML) do componente, através do uso do:
+    <code>{{ "{{nome_da_variavel}}" }}</code>.
+  </p>
+  <p>
+    Para utilizar basta criar a variavel no arquivo
+    <code>nome-do-componente.ts</code> e instanciar no arquivo
+    <code>nome-do-componente.html</code> usando o:
+    <code>{{ "{{nome_da_variavel}}" }}</code>.
+  </p>
+  <h3>Exemplo:</h3>
+  <p>
+    Foi instanciada uma variável com o nome "variável interpolada" no componente
+    do meu projeto chamado
+    <code>interpolacao.ts</code>, agora será exibida aqui através da
+    interpolação: {{ interpolacao }}
+  </p>
+  <ul>
+    <li>
+      Arquivo (interpolacao-texto.ts):
+      <span class="code">
+        <code>interpolacao: string = "variável interpolada"</code>
+      </span>
+    </li>
+    <li>
+      Arquivo (interpolacao-texto.html):
+      <span class="code">
+        <code>{{ "{{interpolacao}}" }}</code>.
+      </span>
+    </li>
+  </ul>
+</div>

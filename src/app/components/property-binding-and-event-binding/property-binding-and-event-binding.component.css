@@ -1,0 +1,12 @@
+img{
+ 
+  border: 1px solid black ;
+}
+.img{
+  text-align: center;
+  
+}
+.spaceImg{
+  padding-left: 5em;
+  padding-right: 5em;
+}

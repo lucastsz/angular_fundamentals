@@ -1,0 +1,17 @@
+<div class="class">
+  <h2>8. Services</h2>
+  <p>
+    O service como o nome já diz, são serviços que podem ser utilizados em mais
+    de um componente, reaproveitando e evitando codigos duplicados.
+  </p>
+
+  <label for="name">Digite seu nome: </label>
+  <input type="text" name="name" id="name" [(ngModel)]="nome" />
+
+  <button class="button" type="button" (click)="adicionarNome()">
+    Adicionar Nome
+  </button>
+  <button class="button" type="button" (click)="exibeCadastros()">
+    Exibir cadastrados
+  </button>
+</div>

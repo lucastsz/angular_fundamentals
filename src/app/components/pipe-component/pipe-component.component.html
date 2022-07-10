@@ -1,0 +1,38 @@
+<div class="class">
+  <h2>3. Pipe</h2>
+  <p>
+    O Pipe é utilizado para formatar a forma como os dados aparecem na tela, ex:
+  </p>
+  <ul>
+    <li>Data: <code>nome_da_variavel | date: &quot;dd/MM/yyyy&QUOT; </code></li>
+    <li>String: <code>variavel | UpperCasePipe ou LowerCasePipe</code></li>
+    <li>Unidade de Moedas: <code> variavel | CurrencyPipe</code></li>
+    <li>
+      <a href="https://angular.io/guide/pipes"> clique aqui</a> para ver mais
+      sobre pipes;
+    </li>
+  </ul>
+  <p>
+    É possível criar seu próprio Pipe, basta criar usando o comando
+    <span class="code">
+      <code>ng generate pipe <i>nome-do-pipe.</i></code>
+    </span>
+  </p>
+  <h3>Exemplo:</h3>
+  <p>
+    Criei no meu projeto um pipe para multiplicar, usei o comando:
+    <span class="code">
+      <code>ng generate pipe multiplica-por.</code>
+    </span>
+  </p>
+  <p>Na classe do Pipe eu fiz algumas alterações:</p>
+  <p>
+    <img src="../assets/pipe-multiplica-por.png" alt="Código classe Pipe" />
+  </p>
+  <p>
+    Após personalizado a pipe, usarei no meu componente html: <br />
+    Ex: <code>{{ "{{  2 | multiplicaPor: 5 }}" }}</code> <br />
+    Resultado:
+    {{ 2 | multiplicaPor: 5 }}
+  </p>
+</div>

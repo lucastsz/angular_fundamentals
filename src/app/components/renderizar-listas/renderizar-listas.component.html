@@ -1,0 +1,46 @@
+<div class="class">
+  <h2>6. Renderizar Listas</h2>
+  <p>
+    Para Renderizar listas você utilizará a propriedade *ngFor, ela permite que
+    você faça um for de uma lista declarada no arquivo TS do componente.
+  </p>
+  <ol>
+    <li>
+      Criar uma interface dentro de uma pasta types (criar essa pasta), em
+      seguida criar o arquivo interface, exemplo:
+    </li>
+    <p>
+      <img src="../assets/interface produtos.png" alt="" />
+    </p>
+    <li>Declarar essa interface no arquivo .ts do componente, exemplo:</li>
+    <p>
+      <img src="assets/lista no ts.png" alt="" />
+    </p>
+    <li>
+      Instaciar o *ngFor na lista do html:
+      <p>
+        <img src="assets/ngfor produtos.png" alt="" />
+      </p>
+      <p>
+        O ngFor vai percorrer a lista de produtos, usei a interpolacao de dados
+        para pegar os atributos do produto e na tag span eu usei um ngClass para
+        fazer uma alteracao de estado no CSS, exemplo: os quando o atributo
+        esgotado do produto for verdadeiro o span terá a classe com o nome
+        esgotado, se não tiver esgotado, receberá uma classe chamada disponivel,
+        no arquivo CSS eu posso instanciar essas duas classes e posso atribuir
+        uma cor diferente ou qualquer propriedade. Exemplo:
+      </p>
+    </li>
+  </ol>
+  <h3>Lista Produtos</h3>
+  <ul>
+    <li *ngFor="let produto of produtos">
+      <p>
+        {{ produto.descricao }} - {{ produto.valor | currency: "BRL" }} -
+        <span [ngClass]="produto.esgotado ? 'esgotado' : 'disponivel'">
+          {{ produto.esgotado ? "Esgotado" : "Disponível" }}
+        </span>
+      </p>
+    </li>
+  </ul>
+</div>

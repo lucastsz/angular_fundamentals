@@ -1,0 +1,82 @@
+<div class="class">
+  <h1>Introdução ao Angular</h1>
+  <h2>1. Primeiros passos com o Angular</h2>
+  <ol>
+    <li>
+      Para criar um projeto Angular, digite no terminal o comando:
+      <code
+        ><span class="code">ng new <i> nome-do-projeto</i></span>
+      </code>
+      e pressione Enter.
+    </li>
+    <li>
+      Durante a criação do projeto, o angular perguntará se deseja adicionar o
+      <b>Angular routing</b> digite <b>Y</b> e pressione Enter.
+    </li>
+    <li>
+      Depois perguntará qual o formato de estilização que você gostaria de usar,
+      pressione enter para adicionar o <b>CSS (1º Opção).</b>
+    </li>
+    <li>
+      O angular é baseado em componentes, cada componente irá ter um arquivo
+      <b>CSS, HTML, TypeScrit e TypeScrit para testes.</b>
+    </li>
+    <li>Os arquivos raízes da aplicação</li>
+  </ol>
+  <h3>1.1. Criar Componentes</h3>
+  <p>
+    Para criar componentes no projeto você deverá digitar no terminal do projeto
+    o seguinte comando:
+  </p>
+
+  <ul>
+    <li>
+      Digite:
+      <code>
+        <span class="code"
+          >ng generate component <i> nome-do-componente</i>
+        </span>
+      </code>
+      e pressione Enter.
+    </li>
+    <li>
+      Para organizar melhor os componentes e deixar mais limpa a aplicação, você
+      poderá criar uma pasta components para organizar melhor os componentes na
+      aplicação). Nesse caso você poderá digitar esse código em vez do outro:
+      <ul>
+        <li>
+          <code>
+            <span class="code"
+              >ng generate component components/<i>nome-do-componente</i>
+            </span>
+          </code>
+        </li>
+      </ul>
+    </li>
+  </ul>
+  <p>
+    Para Exibir o seu componente criado no app você terá que estanciar o
+    componente no arquivo <code>app.component.html</code>. Perceba que assim que
+    você cria um novo projeto esse arquivo <code>app.component.html</code> vem
+    preenchido como padrão do angular, você pode selecionar tudo e deletar.
+  </p>
+  <h3>1.2 Estanciando um componente no projeto raiz</h3>
+  <p>
+    Abra o arquivo <code>app.component.html</code> e digite:
+    <span class="code">
+      &lt; app-nome-do-componente &gt; &lt;/app-nome-do-componente &gt;
+    </span>
+    .
+  </p>
+  <p>
+    Caso não tenha iniciado sua aplicação, digite no terminal:
+    <span class="code">
+      <code> ng serve </code>
+    </span>
+    ou
+    <span class="code">
+      <code> npm start </code>
+    </span>
+    caso tenha o npm instalado na sua máquina.
+  </p>
+</div>

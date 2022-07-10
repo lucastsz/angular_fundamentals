@@ -1,0 +1,10 @@
+<div class="class">
+  <h2>7. Interação entre componentes</h2>
+  <h3>Componente Pai</h3>
+  <p>Nome: {{ nome }} {{ filho.sobrenome }}</p>
+</div>
+<app-componente-filho
+  (mostraNome)="mostraNomeCompleto($event)"
+  [nome]="nome"
+  #filho
+></app-componente-filho>

@@ -1,0 +1,25 @@
+<div class="class">
+  <h2>
+    5. Manusear do componente HTML para o TypeScript e vice versa (To-Way Data
+    Binding)
+  </h2>
+  <p>
+    Para manipular os dados do HTML para o TS ou ao contrário, você terá que
+    usar o <span class="code"><code>[(ngModel)]="nome-da-variavel"</code></span>
+  </p>
+  <p>Antes de tudo importar o FormsModule no arquivo app.modules do projeto.</p>
+  <p>
+    Criaremos um input e colocaremos o ngModel dentro da tag passando a variável
+    instanciada no arquivo TS. Exemplo:
+  </p>
+  <p>
+    <img src="../assets/ngModel.png" alt="ngModel" />
+  </p>
+  <p>
+    <label for="nome">Digite seu nome:</label>
+    <input type="text" name="nome" id="nome" [(ngModel)]="nome" />
+  </p>
+  <p>
+    {{ nome }}
+  </p>
+</div>
